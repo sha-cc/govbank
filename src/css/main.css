@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css?family=Inter&display=swap");
+
+:root {
+    /* https://coolors.co/palette/2b2d42-8d99ae-edf2f4-ef233c-d90429 */
+    --theme-black:      #2B2D42;
+    --theme-gray:       #8D99AE;
+    --theme-white:      #EDF2F4;
+    --theme-red1:       #EF233C;
+    --theme-red2:       #D90429;
+
+    --font-sans:        "Inter", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}

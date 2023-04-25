@@ -1,0 +1,71 @@
+@import url("main.css");
+
+.text {
+    font-family: var(--font-sans);
+}
+
+.highlight { 
+    color: #ffffff;
+    background-color: var(--theme-red2);
+    font-weight: 900;
+    padding: 5px 10px;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 7vh;
+    background-color: var(--theme-red2);
+}
+
+.title {
+    font-size: 4em;
+    font-weight: 500;
+    margin: 0;
+}
+
+.description {
+    font-size: 1.5em;
+    color: var(--theme-black);
+}
+
+.main-section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-section > .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.main-section > .content > .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20%;
+}
+
+.main-section > .content > .image {
+    display: flex;
+    justify-content: center;
+}
+
+.main-section > .content > .image > img {
+    width: 30em;
+}
+
+.main-one {
+}
+
+.main-two {
+    background-color: var(--theme-black);
+}
+
+.main-three {
+    background-color: var(--theme-red1);
+}
