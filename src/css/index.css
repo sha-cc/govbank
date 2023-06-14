@@ -1,30 +1,13 @@
 @import url("main.css");
 
-.highlight { 
-    color: #ffffff;
-    background-color: var(--three);
-    font-weight: 900;
-    padding: 5px 10px;
-}
-
-.nav {
+/* .nav {
     position: fixed;
     top: 0;
     width: 100%;
     height: 7vh;
-    background-color: var(--three);
-}
-
-.title {
-    font-size: 4em;
-    font-weight: 500;
-    margin: 0;
-}
-
-.description {
-    font-size: 1.5em;
-    color: var(--one);
-}
+    background: #ffffff05;
+    backdrop-filter: blur(50px);
+} */
 
 .main-section {
     height: 100vh;
@@ -34,34 +17,86 @@
     justify-content: center;
 }
 
-.main-section > .content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.main-section > .content > .text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 20%;
-}
-
-.main-section > .content > .image {
-    display: flex;
-    justify-content: center;
-}
-
-.main-section > .content > .image > img {
-    width: 30em;
-}
-
 .main-one {
+    background: url("../img/bg.jpg");
+    background-size: contain;
 }
 
 .main-two {
-    background-color: var(--one);
+    background: #457b9d;
 }
 
 .main-three {
-    background-color: var(--two);
+    background: #e63946;
+}
+
+li, a {
+    font-size: 16px;
+    color: inherit;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 9vh;
+    background: #ffffff00;
+    backdrop-filter: blur(10px);
+}
+
+header > * {
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav-links li a {
+    transition: all .3s ease 0s;
+}
+
+.nav-links > li > a:hover {
+    color: #51006b;
+}
+
+button {
+    padding: 10px 20px;
+    background: 9px 25px;
+    color: white;
+    background-color: #51006b;
+    border: none;
+    border-radius: 50px;
+    transition: all .3s ease 0s;
+    font-family: var(--font-sans);
+}
+
+button:hover {
+    background-color: #545a91;
+}
+
+.text {
+    width: 30vw;
+    margin-right: 10vw;
+}
+
+.text > p {
+    margin-top: 30px;
+    font-size: 1.3em;
+}
+
+h1 {
+    font-variant-caps: all-small-caps;
+    font-size: 4em;
 }
