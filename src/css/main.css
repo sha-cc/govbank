@@ -1,13 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:500&display=swap");
 
 :root {
-    /* https://coolors.co/palette/2b2d42-8d99ae-edf2f4-ef233c-d90429 */
-    --one:      #17252a;
-    --two:      #2b7a78;
-    --three:    #3aafa9;
-    --four:     #def2f1;
-    --five:     #feffff;
-
     --font-sans:        "Montserrat", sans-serif;
 }
 
@@ -20,4 +13,105 @@
 body {
     font-family: var(--font-sans);
     font-weight: 500;
+}
+
+li, a {
+    font-size: 16px;
+    color: inherit;
+    text-decoration: none;
+}
+
+#no-resp {
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255, .5);
+    backdrop-filter: blur(10px);
+    align-items: center;
+    justify-content: center;
+}
+
+#no-resp > .text {
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+    html {
+        overflow: hidden;
+    }
+
+    #no-resp {
+        display: flex;
+        visibility: visible;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 9vh;
+    background: rgb(255, 255, 255, 0);
+    backdrop-filter: blur(10px);
+}
+
+.header > * {
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav-links li a {
+    transition: all .3s ease 0s;
+}
+
+.nav-links > li > a:hover {
+    color: #51006b;
+}
+
+.nav-button {
+    padding: 10px 20px;
+    background: 9px 25px;
+    color: white;
+    background-color: #e783b8;
+    border: none;
+    border-radius: 50px;
+    transition: all .3s ease 0s;
+    font-family: var(--font-sans);
+    transition: .5s;
+}
+
+.nav-button:hover {
+    background-color: #545a91;
+    transition: .5s;
+}
+
+.text {
+    width: 30vw;
+    margin: 0 5vw;
+}
+
+.text > h1 {
+    color: #853189;
+}
+
+.text > p {
+    margin-top: 30px;
+    font-size: 1.3em;
+    color: #605f5f;
 }

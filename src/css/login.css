@@ -1,0 +1,42 @@
+@import url("main.css");
+
+#main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container > * {
+    width: 20vw;
+    height: 50px;
+    font-size: 1.2em;
+}
+
+input {
+    font-family: var(--font-sans);
+    padding: 10px;
+    outline: none;
+    border: 3px solid #853189;
+    border-radius: 12px;
+    transition: .3s;
+}
+
+input:hover {
+    box-shadow: 5px 5px #853189;
+    transition: .3s;
+}
+
+input:focus {
+    box-shadow: 5px 5px #853189;
+    transition: .3s;
+}

@@ -10,24 +10,30 @@
 </head>
 <body>
     <header class="header">
-        <img class="logo" src="src/img/logo.svg">
+        <a href="index.html"><img class="logo" src="src/img/logo.svg"></a>
         <nav id="main-nav" class="nav">
             <ul class="nav-links">
-                <li><a href="#">Клиентам</a></li>
-                <li><a href="#">Партнерам</a></li>
-                <li><a href="#">Статистика govBank</a></li>
+                <li><a href="clients.html">Клиентам</a></li>
+                <li><a href="partners.html">Партнерам</a></li>
+                <li><a href="stats.html">Статистика govBank</a></li>
             </ul>
         </nav>
-        <a href="#"><button class="nav-button">Войти</button></a>
+        <a href="#"><button class="nav-button" onclick="location.href = 'login.html'">Войти</button></a>
     </header>
     
+    <div id="no-resp">
+        <div class="text">
+            <h1>А адаптивности на этом сайте нет, ай-яй</h1>
+        </div>
+    </div>
+
     <div class="main-section main-one">
         <div class="text">
             <h1>Карта govBank</h1>
             <p>Новая карта от govBank - безопасный и удобный способ оплаты. Без комиссий за снятие наличных, без скрытых платежей. Откройте счет уже сегодня и получите бесплатную доставку карты в течение недели</p>
         </div>
         <div class="img">
-            <img src="src/img/card.svg">
+            <img width="90%" src="src/img/card.svg">
         </div>
     </div>
 
@@ -36,12 +42,35 @@
             <img src="src/img/phone_banking.svg" width="50%">
         </div>
         <div class="two-right">
-
+            <div class="text">
+                <h1>Мобильное приложение govBank</h1>
+                <p>Мобильное приложение govBank - это удобный инструмент для управления вашими банковскими операциями в любом месте и в любое время. Вы можете проверять баланс, оплачивать счета, переводить деньги и контролировать свои финансы прямо с вашего телефона. Безопасность ваших данных гарантирована благодаря использованию самых современных технологий защиты.</p>
+            </div>
         </div>
     </div>
 
     <div class="main-section main-three">
-
+        <div class="card">
+            <img src="src/img/p1.jpeg" class="card-img">
+            <div class="text">
+                <h1>Екатерина Петрова</h1>
+                <p>govBank - худший банк, с которым я когда-либо имела дело. Их услуги невероятно дорогие, а их клиентская поддержка безразлична и неэффективна.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="src/img/p2.jpeg" class="card-img">
+            <div class="text">
+                <h1>Александр Иванов</h1>
+                <p>Ужасное качество обслуживания в govBank. Я не могу понять, почему люди продолжают пользоваться их услугами. Я бы никогда не порекомендовал этот банк никому.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="src/img/p3.jpeg" class="card-img">
+            <div class="text">
+                <h1>Дмитрий Смирнов</h1>
+                <p>govBank - это настоящий кошмар. Я потратил час на то, чтобы связаться с их поддержкой по телефону, и когда мне наконец удалось дозвониться, они не смогли помочь мне с моим вопросом. Я больше никогда не обращусь в этот банк.</p>
+            </div>
+        </div>
     </div>
     <footer id="main-footer" class="footer"></footer>
 </body>

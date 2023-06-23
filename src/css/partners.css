@@ -1,0 +1,22 @@
+@import url("main.css");
+
+#main {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.text {
+    width: 50%;
+    margin: 10vh 0;
+}
+
+#img-hero {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+#img-hero > img {
+    width: 30%;
+}

@@ -1,0 +1,18 @@
+@import url("main.css");
+
+#main {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+#img-banner {
+    width: 100vw;
+    height: 40vh;
+    background: url("../img/bg2.jpg");
+}
+
+.text {
+    width: 50%;
+    margin: 10vh 0;
+}

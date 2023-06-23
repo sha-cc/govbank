@@ -1,11 +1,5 @@
 @import url("main.css");
 
-li, a {
-    font-size: 16px;
-    color: inherit;
-    text-decoration: none;
-}
-
 .main-section {
     height: 100vh;
     width: 100%;
@@ -16,85 +10,53 @@ li, a {
 
 .main-one {
     background: url("../img/bg.jpg");
-    background-size: contain;
-}
-
-
-.main-three {
-    background: #853289;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
-
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 9vh;
-    background: #ffffff00;
-    backdrop-filter: blur(10px);
-}
-
-.header > * {
-    cursor: pointer;
-}
-
-.nav-links {
-    list-style: none;
-}
-
-.nav-links li {
-    display: inline-block;
-    padding: 0 20px;
-}
-
-.nav-links li a {
-    transition: all .3s ease 0s;
-}
-
-.nav-links > li > a:hover {
-    color: #51006b;
-}
-
-.nav-button {
-    padding: 10px 20px;
-    background: 9px 25px;
-    color: white;
-    background-color: #51006b;
-    border: none;
-    border-radius: 50px;
-    transition: all .3s ease 0s;
-    font-family: var(--font-sans);
-}
-
-.nav-button:hover {
-    background-color: #545a91;
-}
-
-.text {
-    width: 30vw;
-    margin-right: 10vw;
-}
-
-.text > p {
-    margin-top: 30px;
-    font-size: 1.3em;
+    background-size: 100vw;
 }
 
 .two-left, .two-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 50vw;
     height: 100vh;
 }
 
-.two-left {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .two-right {
     background: #ffd2e7;
+}
+
+.main-three {
+    background: darkgray;
+    gap: 5vw;
+    padding: 0 5vw;
+}
+
+.card {
+    background-color: white;
+    border: 3px solid #51006b;
+    width: 30%;
+    height: 70%;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: .5s;
+}
+
+.card:hover {
+    box-shadow: 10px 10px #51006b;
+    transition: .5s;
+}
+
+.card > img {
+    border: 30px solid #ffd2e7;
+    border-radius: 50%;
+    width: 50%;
+    margin-top: 10%;
+}
+
+.card > .text {
+    text-align: center;
+    margin-top: 30px;
+    width: 80%;
 }
